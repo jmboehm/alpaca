@@ -262,7 +262,7 @@ arma::vec PseudoDemeaning(const arma::vec &kv,
       for (unsigned int j = 0 ; j < klvls_k(k) ; ++j) {
         while (i < kn && d_tmp(i) == j) {
           nom(j) += kw_tilde_tmp(i) * kMv_tmp(i);
-          denom(j) += kw_tilde_tmp(i) * kw_tilde_tmp(i++)
+          denom(j) += kw_tilde_tmp(i) * kw_tilde_tmp(i++);
         }
       }
       
